@@ -17,8 +17,10 @@
 <body>
   
   <div></div> 
-  
+  <button id="login_btn">Login</button>
+  <div class="q_wrapper">
 
+  </div>
 
 
 
@@ -28,7 +30,7 @@
   <div class="forClick"></div>
   <div class="login_box flexBox">
     <div class="login_container">
-      <div class="login_title">Log In</div>
+      <div class="login_title">LOGIN</div>
       <div class="login_field">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="text" id="sample3">
@@ -46,90 +48,23 @@
       <div class="log_reminder">
         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
           <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-          <span class="mdl-checkbox__label">Remember me on this device</span>
-          <a href="#">Forgot Password?</a>
+          <span class="mdl-checkbox__label">Keep Me Signed In</span>
         </label>
       </div>
       <div class="log_btn_holder">
-        <button>Login</button>
+        <button>SIGN IN <i class="fa fa-sign-in"></i></button>
       </div>
+      <div class="link_forgot"><a href="#">Forgot Password?</a></div>
     </div>
-    <div class="reg_board flexBox">
-      If you are a new user or like to join
-      <div class="reg_btn_holder">
-        <button>Register</button>
-      </div> 
-    </div>
+    
   </div>
 </div> 
-</div>
-<div class="hidn" id="pop_register">
-  <div class="pop_bgd flexBox">
-    <div class="forClick"></div>
-    <div class="login_box flexBox">
-      <div class="login_container">
-        <div class="login_title">Register</div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">First Name</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Last Name</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Email/Mobile Number</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="password" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Password</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="password" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Confirm Password</label>
-          </div>
-        </div>
-        <div class="log_btn_holder">
-          <button>Submit</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 </div>
 <div class="pop_closer" id="popClose">
   <img src="images/close_button.png">
 </div>
 
-<div class="modal fade" id="myModal" role="dialog"><!--POP UP-->
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sample Notification</h4>
-        </div>
-        <div class="modal-body">
-          <p>Email Verification sent successfully!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -137,12 +72,11 @@
 $(document).ready(function(){
     $("#login_btn").click(function(){
         $("#pop_login, #popClose").show();
-    });
-    $("#reg_btn").click(function(){
-        $("#pop_register, #popClose").show();
+        $(".q_wrapper").css("width","calc(100% - 400px)");
     });
     $(".forClick, #popClose").click(function(){
-        $("#pop_register, #pop_login, #popClose").hide();
+        $("#pop_login, #popClose").hide();
+        $(".q_wrapper").css("width","100%");
     });
 });
 </script>
