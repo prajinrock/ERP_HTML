@@ -1,0 +1,294 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.flexBox{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+}
+.al_cnt{
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+}
+.js_cnt{
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+}
+*{
+	box-sizing: border-box;
+}
+.side_panel{
+	width: 230px;
+	background-color: #fff;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.3);
+	height: 100%;
+	position: absolute;
+	z-index: 49;
+}
+.side_panel.collpsd{
+	width: 40px;
+}
+.content_panel{
+	width: calc(100% - 230px);
+	height: 100%;
+	position: absolute;
+	background-color: #fafcfe;
+	right: 0;
+	z-index: 48;
+}
+.content_panel.expnd{
+	width: calc(100% - 40px);
+}
+.quiq_logo{
+	width: 100%;
+	background-color: #46b2e1;
+	height: 45px;
+	background-image: linear-gradient(to right, #179fd8, #00b09f);
+	padding: 5px;
+}
+
+.logo_icon{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin-left: -200px;
+	animation: ShowIcon2 .5s;
+	animation-fill-mode: forwards;
+	z-index: 9;
+}
+@keyframes ShowIcon2{
+	0%{margin-left: 0px;}
+	100%{margin-left: -200px;}
+}
+.logo_icon.shwIcon{
+	animation: ShowIcon .5s;
+	animation-fill-mode: forwards;
+}
+@keyframes ShowIcon{
+	0%{margin-left: -200px;}
+	100%{margin-left: 0px;}
+}
+.logo_icon > img{
+	width: 100%;
+}
+.logo_holder{
+	height: 30px;
+	width: 113px;
+	display: block;
+	margin-left: 40px;
+	position: relative;
+	animation: ShowLogo2 1s;
+	animation-fill-mode: forwards;
+	z-index: 7;
+}
+@keyframes ShowLogo2{
+	0%{margin-left: -300px;}
+	100%{margin-left: 40px;}
+}
+.logo_holder.ShwLogo{
+	display: block;
+	animation: ShowLogo 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes ShowLogo{
+	0%{margin-left: 0px;}
+	100%{margin-left: -300px;}
+}
+.logo_holder>img{
+	width: 100%;
+}
+.top_bar{
+	width: 100%;
+	background-color: #46b2e1;
+	height: 45px;
+	background-image: linear-gradient(to right, #179fd8, #00b09f);
+	padding: 5px;
+}
+.cover_color{
+	background-color: #14a0d2;
+	height: 40px;
+	width: 30px;
+	position: absolute;
+	z-index: 8;
+	left: 0px;
+}
+/*HAM MENU==========================================*/
+.ham_menu{
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	width: 14px;
+	box-sizing: content-box;
+	height: 12px;
+	padding: 15px;
+	cursor: pointer;
+	margin-left: 180px;
+	z-index: 10;
+}
+.clkd.ham_menu{
+	margin-left: 38px;
+}
+.ham_menu:hover{
+	background-color: rgba(0,0,0,.1);
+	border-radius: 3px;
+}
+.ham_menu:active{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.4) inset;
+}
+.ham_menu>span:nth-child(1){
+	width: 12px;
+	height: 2px;
+	background-color: #fff;
+	border-radius:2px;
+	display: block;
+	position: absolute;
+	animation: ham1a .5s;
+	animation-fill-mode: forwards;
+}
+@keyframes ham1a{
+	0%{margin-left: 0px;}
+	100%{margin-left: -300px;}
+}
+.ham_menu>span:nth-child(2){
+	width: 14px;
+	height: 2px;
+	background-color: #fff;
+	border-radius:2px;
+	display: block;
+	position: absolute;
+	margin-top: 5px;
+	animation: ham2a 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes ham2a{
+	0%{margin-left: 0px;}
+	100%{margin-left: -300px;}
+}
+.ham_menu>span:nth-child(3){
+	width: 9px;
+	height: 2px;
+	background-color: #fff;
+	border-radius:2px;
+	position: absolute;
+	margin-top: 10px;
+	animation: ham3a .7s;
+	animation-fill-mode: forwards;
+}
+@keyframes ham3a{
+	0%{margin-left: 0px;}
+	100%{margin-left: -300px;}
+}
+.ham_menu>span:nth-child(4){
+	width: 10px;
+	height: 2px;
+	background-color: #fff;
+	border-radius:2px;
+	position: absolute;
+	margin-top: 7px;
+	margin-left: -1px;
+	transform: rotate(45deg);
+	animation:arrowBottom .3s;
+}
+@keyframes arrowBottom{
+	0%{margin-top: 27px; margin-left: 19px; background-image: linear-gradient(to right, #fff, #14a1d2);}
+	70%{background-image: linear-gradient(to right, #fff, #14a1d2);}
+	100%{margin-top: 7px; margin-left: -1px; background-image: linear-gradient(to right, #fff, #fff);}
+}
+.ham_menu>span:nth-child(5){
+	width: 10px;
+	height: 2px;
+	background-color: #fff;
+	border-radius:2px;
+	display: block;
+	position: absolute;
+	margin-top: 1px;
+	margin-left: -1px;
+	transform: rotate(-45deg);
+	animation:arrowTop .5s;
+}
+@keyframes arrowTop{
+	0%{margin-top: -18px; margin-left: 19px; background-image: linear-gradient(to right, #fff, #14a1d2);}
+	70%{background-image: linear-gradient(to right, #fff, #14a1d2);}
+	100%{margin-top: 1px; margin-left: -1px; background-image: linear-gradient(to right, #fff, #fff);}
+}
+.clkd.ham_menu>span:nth-child(1){
+	display: block;
+	animation: ham1 1s;
+}
+@keyframes ham1{
+	0%{margin-left: 50px; background-image: linear-gradient(to right, #fff, #14a1d2); width: 60px;}
+	70%{margin-left: -10px;}
+	100%{margin-left: 0px;}
+}
+.clkd.ham_menu>span:nth-child(2){
+	display: block;
+	animation: ham2 .5s;
+}
+@keyframes ham2{
+	0%{margin-left: 50px; background-image: linear-gradient(to right, #fff, #14a1d2); width: 60px;}
+	70%{margin-left: -10px;}
+	100%{margin-left: 0px;}
+}
+.clkd.ham_menu>span:nth-child(3){
+	display: block;
+	animation: ham2 .7s;
+}
+@keyframes ham2{
+	0%{margin-left: 50px; background-image: linear-gradient(to right, #fff, #14a1d2); width: 60px;}
+	70%{margin-left: -10px;}
+	100%{margin-left: 0px;}
+}
+.clkd.ham_menu>span:nth-child(4){
+	display: none;
+}
+.clkd.ham_menu>span:nth-child(5){
+	display: none;
+}
+/*HAM MENU==========================================*/
+.sideMenuX ul{
+	padding: 0px;
+}
+.sideMenuX ul li{
+	list-style: none;
+}
+.sideMenuX ul li a{
+	display: flex;
+	padding: 5px 15px;
+	outline: none;
+	text-decoration:none;
+	align-items: center;
+}
+.sideMenuX ul li a{
+	display: flex;
+	padding: 5px 15px;
+	font-weight: 400;
+	color: #4d6c7b;
+	font-size: 13px;
+}
+.sideMenuX ul li a .linkTx{
+	
+}
+.sideMenuX ul li a .linkIcn{
+	margin-left: auto;
+	
+	color: #45b2e1;
+	padding: 0px 7px;
+	border-radius: 2px;
+}
+.sideMenuX ul li a:hover .linkIcn{
+	background-color: #45b2e1;
+	color: #fff;
+}
+.sideMenuX ul li a > i{
+	font-size: 18px;
+	margin-right: 10px;
+	color: #10a4c8;
+}
+.sideMenuX{
+	padding-top: 10px;
+}
