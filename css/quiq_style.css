@@ -69,10 +69,11 @@
   -ms-flex-direction: column;
   transition: all .3s;
   animation: slideinn 1s;
+  position: relative;
 }
 @keyframes slideinn{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+  0%{opacity: 0;margin-left: 300px;}
+  100%{opacity: 1;margin-left: 0px;}
 }
 .login_container{
   width: 100%;
@@ -177,7 +178,10 @@
 .q_wrapper{
   width: 100%;
   background-color: #444;
-  height: 500px;
+  min-height: 500px;
+  transition: all 1s;
+  color: #fff;
+  font-size: 18px;
 }
 .link_forgot{
   padding-top: 20px;
