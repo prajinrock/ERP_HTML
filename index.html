@@ -8,9 +8,9 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/Google_MDL/material.min.css">
-<link rel="stylesheet" href="css/quiq_style.css">
+<link rel="stylesheet" href="css/login_page.css">
 <link rel="stylesheet" href="css/erp_app_style.css">
 
 <script src="css/Google_MDL/material.min.js"></script>
@@ -31,21 +31,66 @@
       <span></span>
     </div>
   </div>
-  <div class="sideMenuX">
+  <div class="sideMenuX" id="LeftMenu">
     <ul>
       <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
-      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Order</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Receipt</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Quotation</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Note</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Order</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Quotation</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Requisition</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
     </ul>
   </div>
 </div>
-<div class="content_panel expnd" class="CntPanel">
-  <div class="top_bar"></div>
+<div class="content_panel" id="CntPanel">
+  <div class="top_bar flexBox al_cnt">
+    <div class="client_name" id="clientName"><img src="images/DemoDuckLogo2_500px.png">DEMO CORP Inc.</div>
+    <div class="notification_area flexBox al_rht al_cnt">
+      <a href="#" class="notify_alert"><span class="alrt_not"></span><i class="fa fa-bell-o"></i></a>
+      <a href="#" class="notify_msg"><span class="msg_not"></span><i class="fa fa-envelope-o"></i></a>
+      <a href="#" class="account_user"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="submenu_bar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+  </div>
 </div>
   
 <script src="js/jquery.min.js"></script>
@@ -58,6 +103,8 @@ $(document).ready(function(){
         $(".logo_icon").toggleClass("shwIcon");
         $("#SidePnl").toggleClass("collpsd");
         $("#CntPanel").toggleClass("expnd");
+        $("#LeftMenu").toggleClass("togled");
+        $("#clientName").toggleClass("spaced");
     });
 });
 </script>

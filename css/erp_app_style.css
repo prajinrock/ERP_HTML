@@ -269,13 +269,18 @@ body{
 	font-weight: 400;
 	color: #4d6c7b;
 	font-size: 13px;
+	
 }
 .sideMenuX ul li a .linkTx{
-	
+	white-space: nowrap;
+	opacity: 1;
+	transition: all 1s;
+	overflow: hidden;
+  	text-overflow: ellipsis;
 }
 .sideMenuX ul li a .linkIcn{
 	margin-left: auto;
-	
+	font-size: 13px;
 	color: #45b2e1;
 	padding: 0px 7px;
 	border-radius: 2px;
@@ -284,6 +289,13 @@ body{
 	background-color: #45b2e1;
 	color: #fff;
 }
+.sideMenuX ul li a:focus .linkIcn{
+	background-color: #45b2e1;
+	color: #fff;
+}
+.sideMenuX ul li a:focus{
+	background-color: #c9edfc;
+}
 .sideMenuX ul li a > i{
 	font-size: 18px;
 	margin-right: 10px;
@@ -291,4 +303,107 @@ body{
 }
 .sideMenuX{
 	padding-top: 10px;
+}
+.sideMenuX.togled .linkIcn{
+	display: none;
+}
+.sideMenuX.togled .linkTx{
+	display: none;
+	opacity: 0;
+}
+.sideMenuX.togled ul li a{
+	padding: 8px 10px;
+}
+.noti_1{
+	width: 20px;
+	height: 20px;
+	background-color: #333;
+	border-radius: 0px 0px 0px 20px;
+}
+.al_rht{
+	margin-left: auto;
+}
+.notification_area{
+	height: 35px;
+	padding-right: 5px;
+}
+.notification_area a{
+	padding: 4px 8px;
+	border:1px solid rgba(255,255,255,.4);
+	display: inline-block;
+	margin-left: 8px;
+	color: #fff;
+	border-radius: 2px;
+	position: relative;
+}
+.alrt_not{
+	width: 7px;
+	height: 7px;
+	border-radius: 0px 0px 0px 7px;
+	background-color: #f1c40f;
+	position: absolute;
+	margin-top: -4px;
+    margin-left: 15px;
+}
+.msg_not{
+	width: 7px;
+	height: 7px;
+	border-radius: 0px 0px 0px 7px;
+	background-color: #e74c3c;
+	position: absolute;
+	margin-top: -4px;
+    margin-left: 15px;
+}
+.notification_area a i{
+	z-index: 2;
+	position: relative;
+}
+.notification_area a:hover .msg_not, .notification_area a:hover .alrt_not{
+	width: 30px;
+    height: 28px;
+    border-radius: 0px;
+    margin-left: -8px;
+}
+.client_name{
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	padding-left: 10px;
+	height: 100%;
+	max-width: 400px;
+	white-space: nowrap;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+.client_name img{
+		height: 100%;
+		display: inline-block;
+		max-width: 200px;
+		margin-right: 10px;
+}
+.client_name.spaced{
+	padding-left: 50px;
+}
+.submenu_bar .navbar-default{
+	background-color: #fff;
+	border:none;
+	box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+}
+.submenu_bar .navbar-default .navbar-nav>li>a{
+	color: #4d6c7b;
+	font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar{
+	min-height: 32px;
+}
+.submenu_bar .navbar-default .navbar-collapse, .submenu_bar .navbar-default .navbar-form{
+	background-color: transparent;
+}
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+	    padding-top: 6px;
+	    padding-bottom: 6px;
+	}
 }
