@@ -397,9 +397,28 @@ body{
 }
 .navbar{
 	min-height: 32px;
+	margin-bottom: 0px;
 }
 .submenu_bar .navbar-default .navbar-collapse, .submenu_bar .navbar-default .navbar-form{
 	background-color: transparent;
+}
+.breadscrumb{
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.breadscrumb a{
+	color: #7f9fae;
+	padding-right: 10px;
+}
+.breadscrumb span{
+	color: #4d6c7b;
+	padding-left: 10px;
+}
+.breadscrumb i{
+	color: #179fd8;
 }
 @media (min-width: 768px){
 	.navbar-nav>li>a {
