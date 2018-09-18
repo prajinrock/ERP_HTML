@@ -672,8 +672,30 @@ body{
 .bg_lite{
 	background-color: #eef3f4;
 }
+.bg_forms{
+	background:linear-gradient(to left, #2193b0, #6dd5ed);
+}
 .mdl-textfield__input{
-	font-weight: 
+	font-weight: 400;
+	font-size: 14px;
+}
+.cardBox{
+	margin: 0px;
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+}
+.cardHeader{
+	background-color: #f5f5f5;
+	padding: 15px 10px;
+	font-size: 16px;
+	border-bottom:1px solid #ddd;
+	color: #52575b;
+}
+.mdl-textfield__label{
+	font-size: 14px;
+}
+.field_container{
+	padding: 20px 10px;
 }
 @media (min-width: 768px){
 	.navbar-nav>li>a {
