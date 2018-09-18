@@ -117,8 +117,9 @@
     </nav>
     </div>
     <div class="breadscrumb flexBox">
-      <a href="">Purchase</a><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-      <span>Quick Links</span>
+      <a href="">Purchase</a>
+      <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      <a href="#">Payment Terms</a>
     </div>
     <div class="menu_tabs">
       <ul class="nav nav-tabs">
@@ -144,7 +145,7 @@
     </div>
 
     <div class="content_wrap">
-      <div class="pad_10 bg_forms flexBox Qbox_100">
+      <div class="pad_10 flexBox Qbox_100">
         <div class="row Qbox_100">
           <div class="col-sm-3">
             <div class="cardBox">
@@ -155,20 +156,18 @@
                     <label class="mdl-textfield__label" for="sample3">Code</label>
                   </div>
                   <!-- Floating Multiline Textfield -->
-                  <form action="#">
-                    <div class="mdl-textfield mdl-js-textfield">
-                      <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                      <label class="mdl-textfield__label" for="sample5">Description</label>
-                    </div>
-                  </form>
-                  <!-- Simple Select with arrow -->
-                  <div class="mdl-textfield mdl-js-textfield getmdl-select">
-                      <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
-                      <input type="hidden" value="" name="sample2">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">Description</label>
+                  </div>
+                  <!-- Select with floating label and arrow -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                      <input type="text" value="" class="mdl-textfield__input" id="drop_1" readonly>
+                      <input type="hidden" value="" name="drop_1">
                       <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                      <label for="sample2" class="mdl-textfield__label">Type</label>
-                      <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                          <li class="mdl-menu__item" data-val="DEU">Select</li>
+                      <label for="drop_1" class="mdl-textfield__label">Type</label>
+                      <ul for="drop_1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item" data-val="DEU">Option 1</li>
                           <li class="mdl-menu__item" data-val="BLR">Option 2</li>
                           <li class="mdl-menu__item" data-val="RUS">Option 3</li>
                       </ul>
@@ -178,29 +177,34 @@
           </div>
           <div class="col-sm-6">
             <div class="cardBox">
-              <div class="cardHeader">General</div>
+              <div class="cardHeader">Due Date Information</div>
               <div class="row">
                 <div class="col-sm-6">
                   <div class="field_container">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="sample3">
-                      <label class="mdl-textfield__label" for="sample3">Code</label>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                      <input type="text" value="" class="mdl-textfield__input" id="drop_2" readonly>
+                        <input type="hidden" value="" name="drop_2">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        <label for="drop_2" class="mdl-textfield__label">Due Date Type</label>
+                        <ul for="drop_2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="DEU">Option 1</li>
+                            <li class="mdl-menu__item" data-val="BLR">Option 2</li>
+                            <li class="mdl-menu__item" data-val="RUS">Option 3</li>
+                        </ul>
                     </div>
                     <!-- Floating Multiline Textfield -->
-                    <form action="#">
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                        <label class="mdl-textfield__label" for="sample5">Description</label>
-                      </div>
-                    </form>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="sample3">
+                      <label class="mdl-textfield__label" for="sample3">Discount %</label>
+                    </div>
                     <!-- Simple Select with arrow -->
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
-                        <input type="hidden" value="" name="sample2">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                      <input type="text" value="" class="mdl-textfield__input" id="drop_3" readonly>
+                        <input type="hidden" value="" name="drop_3">
                         <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                        <label for="sample2" class="mdl-textfield__label">Type</label>
-                        <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="DEU">Select</li>
+                        <label for="drop_3" class="mdl-textfield__label">Discount Type</label>
+                        <ul for="drop_3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="DEU">Option 1</li>
                             <li class="mdl-menu__item" data-val="BLR">Option 2</li>
                             <li class="mdl-menu__item" data-val="RUS">Option 3</li>
                         </ul>
@@ -211,26 +215,11 @@
                   <div class="field_container">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <input class="mdl-textfield__input" type="text" id="sample3">
-                      <label class="mdl-textfield__label" for="sample3">Code</label>
+                      <label class="mdl-textfield__label" for="sample3">Specified Days From Invoice</label>
                     </div>
-                    <!-- Floating Multiline Textfield -->
-                    <form action="#">
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                        <label class="mdl-textfield__label" for="sample5">Description</label>
-                      </div>
-                    </form>
-                    <!-- Simple Select with arrow -->
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
-                        <input type="hidden" value="" name="sample2">
-                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                        <label for="sample2" class="mdl-textfield__label">Type</label>
-                        <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="DEU">Select</li>
-                            <li class="mdl-menu__item" data-val="BLR">Option 2</li>
-                            <li class="mdl-menu__item" data-val="RUS">Option 3</li>
-                        </ul>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="sample3">
+                      <label class="mdl-textfield__label" for="sample3">Specified Days From Invoice</label>
                     </div>
                   </div>
                 </div>
@@ -238,36 +227,7 @@
               
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="cardBox">
-              <div class="cardHeader">General</div>
-              <div class="field_container">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="sample3">
-                    <label class="mdl-textfield__label" for="sample3">Code</label>
-                  </div>
-                  <!-- Floating Multiline Textfield -->
-                  <form action="#">
-                    <div class="mdl-textfield mdl-js-textfield">
-                      <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                      <label class="mdl-textfield__label" for="sample5">Description</label>
-                    </div>
-                  </form>
-                  <!-- Simple Select with arrow -->
-                  <div class="mdl-textfield mdl-js-textfield getmdl-select">
-                      <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
-                      <input type="hidden" value="" name="sample2">
-                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                      <label for="sample2" class="mdl-textfield__label">Type</label>
-                      <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                          <li class="mdl-menu__item" data-val="DEU">Select</li>
-                          <li class="mdl-menu__item" data-val="BLR">Option 2</li>
-                          <li class="mdl-menu__item" data-val="RUS">Option 3</li>
-                      </ul>
-                  </div>
-                </div>
-            </div>
-          </div>
+          
           
         </div>
         
