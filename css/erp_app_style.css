@@ -545,6 +545,7 @@ body{
 }
 .breadscrumb i{
 	color: #179fd8;
+	margin-top: 2px;
 }
 .menu_tabs{
 	padding:10px;
@@ -870,11 +871,33 @@ body{
 	height: 120px;
 	background-color: rgba(0,0,0,.05);
 	border: 3px solid #fff;
-	box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
 	background-image: url(../images/logo_demo.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 50%;
+}
+.profPicture{
+	width: 120px;
+	height: 140px;
+	background-color: rgba(0,0,0,.05);
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	background-image: url(../images/demo_picture.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+.categoryImage{
+	width: 200px;
+	height: 120px;
+	background-color: rgba(0,0,0,.05);
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	background-image: url(../images/demo_image.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
 }
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
 	background-color: #12a3cb;
@@ -884,12 +907,17 @@ body{
 	padding: 10px 0px;
 }
 .field_container .mdl-tabs__tab{
-	padding: 5px 15px;
+	padding: 0px 15px;
 	text-decoration: none;
+	color: rgba(0,0,0,.45);
 }
 .field_container .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active{
 	color: #34495e;
 	text-decoration: none;
+	background-color: rgba(255,255,255,.4);
+}
+.field_container .mdl-tabs__tab-bar{
+		background-color: #bfe5f5;
 }
 @media (min-width: 768px){
 	.navbar-nav>li>a {
