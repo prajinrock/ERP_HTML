@@ -117,9 +117,9 @@
     </nav>
     </div>
     <div class="breadscrumb flexBox">
-      <a href="">Administration</a>
+      <a href="">Inventory</a>
       <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-      <a href="#">Coa List</a>
+      <a href="#">Items</a>
     </div>
     <div class="menu_tabs">
       <ul class="nav nav-tabs">
@@ -155,44 +155,639 @@
             <div id="genr_tab_1" class="tab-pane fade in active">
               <div class="row">
                 <div class="col-sm-3">
-                    
+                    <div class="field_container">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3">
+                        <label class="mdl-textfield__label" for="sample3">Code</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3">
+                        <label class="mdl-textfield__label" for="sample3">Description</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop1" readonly>
+                          <input type="hidden" value="" name="itemDrop1">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop1" class="mdl-textfield__label">Inventory Type</label>
+                          <ul for="itemDrop1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop2" readonly>
+                          <input type="hidden" value="" name="itemDrop2">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop2" class="mdl-textfield__label">Item Type</label>
+                          <ul for="itemDrop2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop3" readonly>
+                          <input type="hidden" value="" name="itemDrop3">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop3" class="mdl-textfield__label">Category</label>
+                          <ul for="itemDrop3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop4" readonly>
+                          <input type="hidden" value="" name="itemDrop4">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop4" class="mdl-textfield__label">Brand</label>
+                          <ul for="itemDrop4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop5" readonly>
+                          <input type="hidden" value="" name="itemDrop5">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop5" class="mdl-textfield__label">Manufacturer</label>
+                          <ul for="itemDrop5" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop6" readonly>
+                          <input type="hidden" value="" name="itemDrop6">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop6" class="mdl-textfield__label">Model</label>
+                          <ul for="itemDrop6" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop7" readonly>
+                          <input type="hidden" value="" name="itemDrop7">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop7" class="mdl-textfield__label">Inventory UOM</label>
+                          <ul for="itemDrop7" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop8" readonly>
+                          <input type="hidden" value="" name="itemDrop8">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop8" class="mdl-textfield__label">Sales UOM</label>
+                          <ul for="itemDrop8" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                          <input type="text" value="" class="mdl-textfield__input" id="itemDrop9" readonly>
+                          <input type="hidden" value="" name="itemDrop9">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          <label for="itemDrop9" class="mdl-textfield__label">Purchase UOM</label>
+                          <ul for="itemDrop9" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                          </ul>
+                      </div>
+                      <div class="categoryImage"></div>
+                      <div class="btn_Box">
+                        <!-- Accent-colored raised button with ripple -->
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Add Picture
+                        </button>
+                      </div>
+                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="itemCheck1">
+                        <input type="checkbox" id="itemCheck1" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Matriz Group</span>
+                      </label>
+                    </div>
                 </div>
                 <div class="col-sm-9">
                     <div class="field_container">
                       <div class="content_inner_box">
-                        <div class="row">
-                          <div class="col-sm-4">
-                            <div class="field_container padd_down_cutter">
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-                                  <input type="text" value="" class="mdl-textfield__input" id="drop_1" readonly>
-                                  <input type="hidden" value="" name="drop_1">
-                                  <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                                  <label for="drop_1" class="mdl-textfield__label">Financial Year</label>
-                                  <ul for="drop_1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                                      <li class="mdl-menu__item" data-val="DEU">Option 1</li>
-                                      <li class="mdl-menu__item" data-val="BLR">Option 1</li>
-                                      <li class="mdl-menu__item" data-val="RUS">Option 1</li>
-                                  </ul>
+                      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                        <div class="mdl-tabs__tab-bar">
+                            <a href="#userPanel1" class="mdl-tabs__tab is-active">General</a>
+                            <a href="#userPanel2" class="mdl-tabs__tab">Inventory</a>
+                            <a href="#userPanel3" class="mdl-tabs__tab">Purchase</a>
+                            <a href="#userPanel4" class="mdl-tabs__tab">Sales</a>
+                            <a href="#userPanel7" class="mdl-tabs__tab">Account</a>
+                            <a href="#userPanel8" class="mdl-tabs__tab">Note</a>
+                            <a href="#userPanel9" class="mdl-tabs__tab">Add Ons</a>
+                        </div>
+
+                        <div class="mdl-tabs__panel is-active" id="userPanel1">
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">Mfg Serial Number</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">UPC Code</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">HSN Code</label>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="col-sm-4">
-                            <div class="field_container padd_down_cutter">
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-                                  <input type="text" value="" class="mdl-textfield__input" id="drop_2" readonly>
-                                  <input type="hidden" value="" name="drop_2">
-                                  <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                                  <label for="drop_2" class="mdl-textfield__label">Location</label>
-                                  <ul for="drop_2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                                      <li class="mdl-menu__item" data-val="DEU">Option 1</li>
-                                      <li class="mdl-menu__item" data-val="BLR">Option 1</li>
-                                      <li class="mdl-menu__item" data-val="RUS">Option 1</li>
-                                  </ul>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">Weight</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="sample3">
+                                  <label class="mdl-textfield__label" for="sample3">Bar Code</label>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="field_container padd_down_cutter">
+                            <div class="tab_inner_title">English</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Item Description</label>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="userPanel2">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="invtType1" readonly>
+                                      <input type="hidden" value="" name="invtType1">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="invtType1" class="mdl-textfield__label">Valuation Type</label>
+                                      <ul for="invtType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="invtType2" readonly>
+                                      <input type="hidden" value="" name="invtType2">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="invtType2" class="mdl-textfield__label">Inventory UOM</label>
+                                      <ul for="invtType2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="InventCheck1">
+                                    <input type="checkbox" id="InventCheck1" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Lot Tracking</span>
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="InventCheck2">
+                                    <input type="checkbox" id="InventCheck2" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Auto Gen Lot Number</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="InventCheck3">
+                                    <input type="checkbox" id="InventCheck3" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Factor Cost</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Amount / Percent</label>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="InventCheck4">
+                                    <input type="checkbox" id="InventCheck4" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Critical</span>
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="field_container">Kendo Grid</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="userPanel3">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="purchType1" readonly>
+                                      <input type="hidden" value="" name="purchType1">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="purchType1" class="mdl-textfield__label">Purchase UOM</label>
+                                      <ul for="purchType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Decimel Accuracy</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="purchCheck1">
+                                    <input type="checkbox" id="purchCheck1" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Allow Add on Cost</span>
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="purchCheck2">
+                                    <input type="checkbox" id="purchCheck2" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Drop Shipment</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="purchCheck3">
+                                    <input type="checkbox" id="purchCheck3" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Inclusive of Tax</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter padd_down_cutter">
+                                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="purchCheck4">
+                                    <input type="checkbox" id="purchCheck4" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Critical</span>
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="field_container padd_up_cutter">
+                                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="purchType1" readonly>
+                                      <input type="hidden" value="" name="purchType1">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="purchType1" class="mdl-textfield__label">Default Vendor</label>
+                                      <ul for="purchType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="field_container">Kendo Grid</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mdl-tabs__panel" id="userPanel4"><!--Tab Content-->
+                          <div class="minorTab">
+                            <ul class="nav nav-pills">
+                              <li class="active"><a data-toggle="pill" href="#salesTab1">Sales Information</a></li>
+                              <li><a data-toggle="pill" href="#salesTab2">RMA Information</a></li>
+                              <li><a data-toggle="pill" href="#salesTab3">Modifier</a></li>
+                              <li><a data-toggle="pill" href="#salesTab4">Related Items</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                              <div id="salesTab1" class="tab-pane fade in active">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="salesType1" readonly>
+                                      <input type="hidden" value="" name="salesType1">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="salesType1" class="mdl-textfield__label">Sales UOM</label>
+                                      <ul for="salesType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Commission Rate</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Sales Price</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_up_cutter">
+                                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="salesCheck1">
+                                        <input type="checkbox" id="salesCheck1" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Inclusive of Tax</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_up_cutter">
+                                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="salesCheck2">
+                                        <input type="checkbox" id="salesCheck2" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Pack Seperately</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_up_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Decimel Accuracy</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="salesTab2" class="tab-pane fade">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="RMACheck1">
+                                        <input type="checkbox" id="RMACheck1" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Allow Repair</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                          <input type="text" value="" class="mdl-textfield__input" id="RMAType1" readonly>
+                                          <input type="hidden" value="" name="RMAType1">
+                                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                          <label for="RMAType1" class="mdl-textfield__label">Return Period Type</label>
+                                          <ul for="RMAType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                              <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                              <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                              <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Return Period</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter padd_up_cutter">
+                                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="RMACheck2">
+                                        <input type="checkbox" id="RMACheck2" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Allow Refund Returns</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter padd_up_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                      <input type="text" value="" class="mdl-textfield__input" id="RMAType2" readonly>
+                                      <input type="hidden" value="" name="RMAType2">
+                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                      <label for="RMAType2" class="mdl-textfield__label">Return Period Type</label>
+                                      <ul for="RMAType2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                          <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                          <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                      </ul>
+                                  </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_down_cutter padd_up_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Return Period</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="field_container  padd_up_cutter">
+                                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="RMACheck3">
+                                        <input type="checkbox" id="RMACheck3" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Allow Credit Returns</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container  padd_up_cutter">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                            <input type="text" value="" class="mdl-textfield__input" id="RMAType3" readonly>
+                                            <input type="hidden" value="" name="RMAType3">
+                                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                            <label for="RMAType3" class="mdl-textfield__label">Return Period Type</label>
+                                            <ul for="RMAType3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                                <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                                <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                                <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="field_container padd_up_cutter">
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Return Period</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="salesTab3" class="tab-pane fade">
+                                <div class="field_container">Kendo Grid</div>
+                              </div>
+                              <div id="salesTab4" class="tab-pane fade">
+                                <div class="field_container">Kendo Grid</div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      
+                        <div class="mdl-tabs__panel" id="userPanel7">
+                          <div class="field_container padd_down_cutter">
+                            <div class="tab_inner_title">Account Information</div>
+                          </div>
+                          
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                    <input type="text" value="" class="mdl-textfield__input" id="AccntType1" readonly>
+                                    <input type="hidden" value="" name="AccntType1">
+                                    <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                    <label for="AccntType1" class="mdl-textfield__label">Post Account Preferences</label>
+                                    <ul for="AccntType1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                        <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                        <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                        <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                                    <input type="text" value="" class="mdl-textfield__input" id="AccntType2" readonly>
+                                    <input type="hidden" value="" name="AccntType2">
+                                    <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                    <label for="AccntType2" class="mdl-textfield__label">Posting Groups</label>
+                                    <ul for="AccntType2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                        <li class="mdl-menu__item" data-val="DEU">Select 1</li>
+                                        <li class="mdl-menu__item" data-val="BLR">Select 2</li>
+                                        <li class="mdl-menu__item" data-val="RUS">Select 3</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="userPanel8">
+                          <div class="field_container padd_down_cutter">
+                            <div class="tab_inner_title">Write Up Notes</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Notes and Specification</label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Purchase Description</label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="field_container padd_down_cutter">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Sales Description</label>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container padd_up_cutter">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Upcell Description</label>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="userPanel9">
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="field_container">
+                                Kendo Grid Here
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
                       </div>
                     </div>
                 </div>
