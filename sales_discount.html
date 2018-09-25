@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiq ERP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/Google_MDL/material.min.css">
+<link rel="stylesheet" href="css/getmdl-select.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/login_page.css">
+<link rel="stylesheet" href="css/erp_app_style.css">
+
+<script src="css/Google_MDL/material.min.js"></script>
+</head>
+<body>
+<div class="side_panel" id="SidePnl">
+  <div class="quiq_logo flexBox al_cnt">
+    <div class="logo_icon"><img src="images/quiq_icon.png"></div>
+    <div class="cover_color"></div>
+    <div class="logo_holder">
+      <img src="images/quiq_logo.png">
+    </div>
+    <div class="ham_menu" id="hamMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="sideMenuX" id="LeftMenu">
+    <ul>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Invoice</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Order</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Receipt</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Quotation</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Note</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Debit Order</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Quotation</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+      <li><a href="#"><i class="fa fa-beer"></i><span class="linkTx">Purchase Requisition</span><span class="linkIcn"><i class="fa fa-angle-right"></i></span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="content_panel" id="CntPanel">
+  <div class="top_bar flexBox al_cnt">
+    <div class="client_name" id="clientName"><img src="images/DemoDuckLogo2_500px.png">DEMO CORP Inc.</div>
+    <div class="notification_area flexBox al_rht al_cnt">
+      <ul class="navbar-right">
+        <li>
+          <a href="#" class="notify_alert"><span class="alrt_not"></span><i class="fa fa-bell-o"></i></a>
+        </li>
+        <li>
+          <a href="#" class="notify_msg"><span class="msg_not"></span><i class="fa fa-envelope-o"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="account_user dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="submenu_bar">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">Rate</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">POS</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sliders" aria-hidden="true"></i> Configuration <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">MASTERS</li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Administration</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Sales</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reports <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">REPORTS</li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">Sales</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    </div>
+    <div class="breadscrumb flexBox">
+      <a href="">Sales</a>
+      <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      <a href="#">Discount</a>
+    </div>
+    <div class="menu_tabs">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#homeTab">Home</a></li>
+        <li><a data-toggle="tab" href="#quickTab">Quick Access</a></li>
+        <li><a data-toggle="tab" href="#exitTab">Exit</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="homeTab" class="tab-pane fade in active">
+          <button class="tool_btn"><i class="fa fa-save" aria-hidden="true"></i> Save</button>
+          <button class="tool_btn"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+        </div>
+        <div id="quickTab" class="tab-pane fade">
+          <button class="tool_btn"><i class="fa fa-save" aria-hidden="true"></i> Save</button>
+          <button class="tool_btn"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+        </div>
+        <div id="exitTab" class="tab-pane fade">
+          <button class="tool_btn"><i class="fa fa-save" aria-hidden="true"></i> Save</button>
+          <button class="tool_btn"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_wrap">
+      <div class="pad_10 flexBox Qbox_100">
+        <div class="gnrl_tab">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#">General</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="companyGnrl" class="tab-pane fade in active">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Code</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Description</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="date" id="sample3" placeholder="">
+                          <label class="mdl-textfield__label" for="sample3">Start Date</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="date" id="sample3" placeholder="">
+                          <label class="mdl-textfield__label" for="sample3">End Date</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="field_container padd_up_cutter padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="time" id="sample3" placeholder="">
+                          <label class="mdl-textfield__label" for="sample3">Start Time</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_up_cutter padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="time" id="sample3" placeholder="">
+                          <label class="mdl-textfield__label" for="sample3">End Time</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_up_cutter padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                            <input type="text" value="" class="mdl-textfield__input" id="salesDrop1" readonly>
+                            <input type="hidden" value="" name="salesDrop1">
+                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                            <label for="salesDrop1" class="mdl-textfield__label">Voucher Type</label>
+                            <ul for="salesDrop1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                <li class="mdl-menu__item" data-val="DEU">Open</li>
+                                <li class="mdl-menu__item" data-val="BLR">Option 2</li>
+                                <li class="mdl-menu__item" data-val="RUS">Option 3</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_up_cutter padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                            <input type="text" value="" class="mdl-textfield__input" id="salesDrop2" readonly>
+                            <input type="hidden" value="" name="salesDrop2">
+                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                            <label for="salesDrop2" class="mdl-textfield__label">Discount Type</label>
+                            <ul for="salesDrop2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                <li class="mdl-menu__item" data-val="DEU">Open</li>
+                                <li class="mdl-menu__item" data-val="BLR">Option 2</li>
+                                <li class="mdl-menu__item" data-val="RUS">Option 3</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="field_container padd_down_cutter">
+                      <div class="inner_box_title">Select Different Rate Pricing Levels</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <div class="field_container padd_down_cutter">
+                        <div class="radio_align" style="padding-top: 20px;">
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="salesOption1">
+                            <input type="radio" id="salesOption1" class="mdl-radio__button" name="options" value="1">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Buy</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">For Amount</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Get Free</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Unit Price</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <div class="field_container padd_down_cutter">
+                        <div class="radio_align" style="padding-top: 20px;">
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="salesOption2">
+                            <input type="radio" id="salesOption2" class="mdl-radio__button" name="options" value="1">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Buy</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">For Amount</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Get Free</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Unit Price</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <div class="field_container padd_down_cutter">
+                        <div class="radio_align" style="padding-top: 20px;">
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="salesOption3">
+                            <input type="radio" id="salesOption3" class="mdl-radio__button" name="options" value="1">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Unit Price</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <div class="field_container padd_down_cutter">
+                        <div class="radio_align" style="padding-top: 20px;">
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="salesOption4">
+                            <input type="radio" id="salesOption4" class="mdl-radio__button" name="options" value="1">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="field_container padd_down_cutter">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="sample3">
+                          <label class="mdl-textfield__label" for="sample3">Discount %</label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+  
+</div>
+  
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/getmdl-select.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#hamMenu").click(function(){
+        $(".ham_menu").toggleClass("clkd");
+        $(".logo_holder").toggleClass("ShwLogo");
+        $(".logo_icon").toggleClass("shwIcon");
+        $("#SidePnl").toggleClass("collpsd");
+        $("#CntPanel").toggleClass("expnd");
+        $("#LeftMenu").toggleClass("togled");
+        $("#clientName").toggleClass("spaced");
+    });
+});
+</script>
+</body>
+</html>

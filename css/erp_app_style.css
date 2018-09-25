@@ -940,6 +940,31 @@ body{
 	border-radius: 0px;
 	font-size: 13px;
 }
+.radio_align{
+	padding-top: 20px;
+	text-align: center;
+}
+.searchFld{
+	position: relative;
+}
+.clear_srch_btn{
+	position: absolute;
+	right: 0px;
+	top: 16px;
+	background-color: transparent;
+	border: 0px;
+	border-radius: 50%;
+
+}
+
+.clear_srch_btn:hover{
+	background-color: #bfe5f5;
+}
+.clear_srch_btn i{
+	font-size: 20px;
+	color: rgba(0,0,0,0.4);
+	line-height: 1.4;
+}
 @media (min-width: 768px){
 	.navbar-nav>li>a {
 	    padding-top: 6px;
