@@ -965,6 +965,9 @@ body{
 	color: rgba(0,0,0,0.4);
 	line-height: 1.4;
 }
+.inner_box_title .mdl-checkbox{
+	margin-top: 0px;
+}
 @media (min-width: 768px){
 	.navbar-nav>li>a {
 	    padding-top: 6px;
