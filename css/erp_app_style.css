@@ -968,6 +968,9 @@ body{
 .inner_box_title .mdl-checkbox{
 	margin-top: 0px;
 }
+.paddTop_30{
+	padding-top: 30px;
+}
 @media (min-width: 768px){
 	.navbar-nav>li>a {
 	    padding-top: 6px;
