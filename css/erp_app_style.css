@@ -971,6 +971,46 @@ body{
 .paddTop_30{
 	padding-top: 30px;
 }
+.btn{
+	border-radius: 3px;
+}
+.btn-success{
+	background-color: #12a3cb;
+	border-color: #1189aa;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.focus, .btn-success.active, .btn-success.active.focus,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active.focus,.btn-success:active:focus,.btn-success:active:hover,.open>.dropdown-toggle.btn-success.focus,.open>.dropdown-toggle.btn-success:focus,.open>.dropdown-toggle.btn-success:hover{
+	background-color: #1189aa;
+}
+.modal-content{
+	border-radius:0px;
+}
+.modal-header{
+	padding: 10px 15px;
+	font-size: 18px;
+}
+.modal-header h4{
+	font-size: 18px;
+	color: #fff;
+}
+.modal_bg_blue{
+	background-color: #46b2e1;
+	background-image: linear-gradient(to right, #179fd8, #00b09f);
+}
+.modal_container{
+	width: 100%;
+	max-height: 480px;
+	overflow: auto;
+}
+.modal_container .mdl-list__item{
+	min-height: 38px;
+	padding: 5px 16px;
+}
+.mdl-list__item .mdl-checkbox{
+	margin-top: 0px;
+}
+.mdl-list__item .mdl-checkbox__label, .mdl-radio__label{
+	font-size: 15px;
+}
 @media (min-width: 768px){
 	.navbar-nav>li>a {
 	    padding-top: 6px;
